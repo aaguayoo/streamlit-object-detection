@@ -1,0 +1,1 @@
+"""Streamlit-object-detection profilings."""
