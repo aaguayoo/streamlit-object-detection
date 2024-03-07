@@ -2,11 +2,15 @@
 name = "streamlit-object-detection"
 version = "0.1.0"
 description = "Streamlit app for yolo object detection."
-author = ["Alejandro Aguayo-Ortiz <aaguayoo92@gmail.com>"]
+authors = ["Alejandro Aguayo-Ortiz <aaguayoo92@gmail.com>"]
 packages = [{include="streamlit-object-detection"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
+ultralytics = "^8.1.24"
+roboflow = "^1.1.21"
+clearml = "^1.14.4"
+opencv-python = "^4.9.0.80"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "1.7.5"
