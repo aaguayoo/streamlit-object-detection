@@ -7,13 +7,12 @@ packages = [{include="streamlit-object-detection"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
-ultralytics = "^8.1.24"
-roboflow = "^1.1.21"
-clearml = "^1.14.4"
-opencv-python = "^4.9.0.80"
-pafy = "^0.5.5"
-ytdl = "^1.0.0rc5"
-youtube-dl = "^2021.12.17"
+clearml = "1.14.4"
+opencv-python = "4.9.0.80"
+pafy = {git = "git@github.com:aaguayoo/pafy.git", tag="v1.0.0"}
+roboflow = "1.1.21"
+ultralytics = "8.1.24"
+
 
 [tool.poetry.group.dev.dependencies]
 bandit = "1.7.5"

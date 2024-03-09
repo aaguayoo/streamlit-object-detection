@@ -6,7 +6,7 @@ import streamlit as st
 
 # Setting page layout
 st.set_page_config(
-    page_title="Object Detection using YOLOv8",
+    page_title="Fire Gun Detection",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -22,7 +22,7 @@ st.sidebar.header("ML Model Config")
 model_path = st.sidebar.selectbox(
     "Choose de model to load:",
     [f"{settings.MODELS}large.pt", f"{settings.MODELS}small.pt"],
-    index=None,
+    index=0,
 )
 
 confidence = float(st.sidebar.slider("Select Model Confidence", 25, 100, 40)) / 100
